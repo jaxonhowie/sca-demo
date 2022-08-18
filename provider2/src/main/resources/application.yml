@@ -1,0 +1,15 @@
+server:
+  port: 8902
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos01:8848
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include:'*'
